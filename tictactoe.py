@@ -32,9 +32,6 @@ if human == X:
 else:
     machine = X
 
-# intialize board
-board = util.initial_state()
-
 # run the game until there's a winner or tie
 while True:
     # figure out who's turn it is

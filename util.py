@@ -37,7 +37,7 @@ def turn(board):
         return None
 
     # If not beginning or end...
-    # check to see if there's more X's than O's...return 0
+    # check to see if there's more X's than O's...return char with less
     xcount = 0
     ocount = 0
     for row in board:
@@ -55,7 +55,7 @@ def get_human_action(cord):
         answer = input(f"{cord}: ")
         try:
             answer = int(answer)
-            if answer < 3:
+            if answer < 3 and answer > 0:
                 break
             else:
                 print("Please type 0, 1, or 2.")
