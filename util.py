@@ -55,7 +55,7 @@ def get_human_action(cord):
         answer = input(f"{cord}: ")
         try:
             answer = int(answer)
-            if answer < 3 and answer > 0:
+            if answer < 3 and answer >= 0:
                 break
             else:
                 print("Please type 0, 1, or 2.")
